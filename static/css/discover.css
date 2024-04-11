@@ -1,0 +1,157 @@
+.searchHeader{
+    position: relative;
+    width: 95%;
+    height: 30vmin;
+    min-height: 190px;
+    margin: 0 auto;
+    border-radius: .5rem;
+
+}
+/**section boxes**/
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 19, 22, 0.7);
+    border-radius: .5rem;
+}
+/**main "discover recipes" title text.**/
+.mask h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 20px 0 0 20px;
+
+}
+/**main "discover recipes" paragraph text.**/
+.mask p{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 0 0 20px;
+}
+
+/**search styling**/
+.search-flex{
+    display: flex;
+    width: 75%;
+    height: 290px;
+    margin: 0 auto;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+.searchBox{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+.searchBox input[type="text"]{
+    height: 15%;
+    width: 60%;
+    border: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+.searchBox input[placeholder]{
+    padding-left: 15px;
+}
+.searchBox button{
+    height: 15%;
+    width: 15%;
+    margin-left: 10px;
+    border: none;
+    background-color: var(--yellow--);
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+.searchBox button:hover{
+    color: #f76da9;
+}
+
+.discover-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2% auto;
+    flex-wrap: wrap;
+}
+.discover, .discoverResults{
+    width: 49.7%;
+}
+.discoverHeader{
+    height: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+.discover h1, .discoverResults h1{
+    font-weight: 800;
+    font-size: 2.6rem;
+    color: var(--yellow--);
+}
+.discover p, .discoverResults p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: white;
+    width: 100%;
+}
+/** Styling for the 'Suggestions' list **/
+.discoveries, .resultsList{
+    margin: 3% 0 0 0;
+    font-size: 1.5rem;
+    padding: 0 0 0 2.5%;
+    font-weight: 600;
+    list-style-image:url("/static/Images/icon.png");
+    list-style-position: inside;
+}
+.discoveries li, .resultsList li{
+    margin: 1% 0 0 0;
+}
+.discoveries a, .resultsList a{
+    color: var(--blue--);
+    margin: 100PX 0 0 0;
+}
+
+/** responsive styling for various sized screens**/
+@media (max-width: 642px) {
+    .mask h1{
+        font-size: 2rem;
+    }
+    .mask p{
+        font-size: 1rem;
+    }
+    .discover p, .discoverResults p{
+        width: 100%;
+    }
+    .searchBox button {
+        height: 15%;
+        width: 35%;
+    }
+    .discover, .discoverResults {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .discoverHeader{
+        height: 110px;
+    }
+    .discoveries, .resultsList {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px)  {
+    .discover p, .discoverResults p{
+        font-size: 1rem;
+    }
+    .discover h1, .discoverResults h1{
+        font-size: 2rem;
+    }
+    .discoverHeader{
+        height: 110px;
+    }
+    .discoveries, .resultsList {
+        font-size: 1.2rem;
+    }
+
+}
