@@ -53,7 +53,7 @@ The purpose of our website is to provide a comprehensive platform for food enthu
      ```
       command in your terminal after activating your virtual environment (if you're using one).
 
-     Ensure that host='0.0.0.0' is in the code as Render wont be able to build and put the website live.
+     Ensure that host='0.0.0.0' is in the app.py file code as Render wont be able to build and put the website live.
      
       if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=6688)
