@@ -7,6 +7,7 @@ The purpose of our website is to provide a comprehensive platform for food enthu
 - **Discover New Flavors**: Dive into a world of flavors and ingredients, from classic comfort foods to innovative culinary creations.
 - **Get Inspired**: Find inspiration for your next meal, party, or special occasion with our curated selection of recipes and cooking tips.
 - **Share Your Creations**: Share your culinary masterpieces with the community by adding your recipes.
+- **Register/Login**: Create a account or login to your account.
 
 
 ### How to Run The Website: Culinary Fast Track:
