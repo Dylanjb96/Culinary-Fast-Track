@@ -45,6 +45,19 @@ The purpose of our website is to provide a comprehensive platform for food enthu
 
 4. **Access the Website**:
    - Open your web browser and navigate to [http://127.0.0.1:6688](http://127.0.0.1:6688) to view the website.
+  
+5. **Uploading it on Render.com**
+   - Before uploading it on the Web Service, You have to create a requirment file You can create this file manually or by using the
+   - ```
+     > pip freeze > requirements.txt
+     ```
+      command in your terminal after activating your virtual environment (if you're using one).
+
+     Ensure that host='0.0.0.0' is in the code as Render wont be able to build and put the website live.
+     
+      if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=6688)
+
 
 ### Visit the Wesbite
 Once the server is running, you can explore the features and functionalities of Culinary Fast Track by browsing to the provided URL below:
